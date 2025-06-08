@@ -1,0 +1,160 @@
+@media screen and (max-width: 1700px) {
+  .content_contaienr {
+    max-width: 1160px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .content_contaienr {
+    max-width: 1000px;
+  }
+
+  .cheaild_contents {
+    gap: 30%;
+  }
+
+  /* პატარა ზომის ბარათები */
+  .card.small {
+    width: 45%; /* ორზე გვერდიგვერდ */
+  }
+
+  /* დიდი ბარათი */
+  .card.large {
+    width: 100%; /* სრული სიგანე */
+  }
+
+  /* მარჯვენა ბარათები ხაზზე გადაბმა */
+  .right-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  /* მთავარი კონტეინერის ორგანიზება */
+  .maincards-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1430px) {
+  /* რეკლამების ზომები და პოზიციები შეზღუდვა */
+  .reclamleft,
+  .reclamrigth {
+    width: 200px;
+    height: 400px;
+    top: 25%; /* თუ არ გაქვს, გირჩევ */
+  }
+
+  .reclamleft {
+    left: 5px;
+    top: 30%;
+  }
+
+  .reclamrigth {
+    right: 5px;
+     top: 30%;
+  }
+
+  .content_contaienr {
+    max-width: 900px;
+  }
+
+  .right-cards {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .right-cards .small {
+    width: 45%;
+    height: 190px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .content_contaienr {
+    max-width: 800px;
+  }
+   .cheaild_contents {
+    gap: 20%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .content_contaienr {
+    max-width: 700px;
+  }
+   .cheaild_contents {
+    gap: 17%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .content_contaienr {
+    max-width: 600px;
+  }
+   .cheaild_contents {
+    gap: 9%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  /* რეკლამების დამალვა */
+  .reclamleft,
+  .reclamrigth {
+    display: none;
+  }
+
+   .cheaild_contents {
+    gap: 60%;
+  }
+  .menu {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+
+  .content_contaienr {
+    max-width: 90%; /* ეს უკეთესი იქნება რეპსონსივისთვის */
+    padding: 20px 20px; /* ზოგადი პადინგი */
+  }
+
+  .header {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .maincards-wrapper {
+    display: none; /* თუ ეს გინდა პატარა ეკრანზე */
+  }
+    .cheaild_contents {
+    gap: 60%;
+  }
+  .content_contaienr{
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+ 
+    .cheaild_contents {
+    gap: 50%;
+  }
+  
+}
+@media screen and (max-width: 500px) {
+ 
+    .cheaild_contents {
+    gap: 40%;
+  }
+  
+}
+@media screen and (max-width: 400px) {
+ 
+    .cheaild_contents {
+    gap: 30%;
+  }
+  
+}

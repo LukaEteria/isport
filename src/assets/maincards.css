@@ -1,0 +1,79 @@
+.maincards-wrapper {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.left-card .large,
+.right-cards .small {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  padding: 20px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.left-card .large {
+  width: 730px;
+  height: 462px;
+}
+
+.right-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right-cards .small {
+  width: 350px;
+  height: 220px;
+}
+
+.left-card .large::before,
+.right-cards .small::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 16px;
+  z-index: 0;
+}
+
+.card, 
+.card:link, 
+.card:visited {
+  text-decoration: none;
+  color: inherit;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card .overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  color: white;
+  font-size: 30px;
+  width: 80%;
+}
+
+
+.small_titel {
+  color: white;
+  font-size: 15px;
+}

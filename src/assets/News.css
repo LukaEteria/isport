@@ -1,0 +1,92 @@
+.news-wrapper {
+    border-radius: 20px;
+    margin-top: 20px;
+  padding: 16px;
+  background-color: #18203E;
+}
+
+.news-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.news-line {
+    width: 90%;
+    height: 2px;
+    background-color: #888;
+}
+
+.news-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+}
+
+.news-link {
+  font-size: 14px;
+  color: #2563eb;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.2s ease;
+}
+
+.news-link:hover {
+  color: #1e40af;
+  text-decoration: underline;
+}
+
+.news-cards {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+  scroll-behavior: smooth;
+
+  /* Scrollbar არ ჩანს */
+  scrollbar-width: none; /* Firefox */
+}
+
+.news-cards::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.news-card {
+  flex: 0 0 280px; /* მუდმივი სიგანე, არ შემცირდეს */
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.news-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+.news-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.news-content {
+  padding: 14px 16px;
+}
+
+.news-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  line-height: 1.3;
+}
+
+
+.news-date {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 6px;
+}
