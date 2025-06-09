@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../App.css";
 import Logo from "./Logo";
 
@@ -17,12 +18,12 @@ export default function Header() {
         {/* Desktop Menu */}
         <div className="menu desktop-menu">
           <ul>
-            <li>ფეხბურთი</li>
-            <li>კალათბურთი</li>
-            <li>ჩოგბურთი</li>
-            <li>ორთაბრძოლები</li>
-            <li>რაგბი</li>
-            <li>სხვა</li>
+            <li><Link to="/football">ფეხბურთი</Link></li>
+            <li><Link to="/basketball">კალათბურთი</Link></li>
+            <li><Link to="/tennis">ჩოგბურთი</Link></li>
+            <li><Link to="/combatsports">ორთაბრძოლები</Link></li>
+            <li><Link to="/rugby">რაგბი</Link></li>
+            <li><Link to="/other">სხვა</Link></li>
           </ul>
         </div>
 
@@ -38,12 +39,12 @@ export default function Header() {
       {menuOpen && (
         <div className="dropdown-menu">
           <ul>
-            <li>ფეხბურთი</li>
-            <li>კალათბურთი</li>
-            <li>ჩოგბურთი</li>
-            <li>ორთაბრძოლები</li>
-            <li>რაგბი</li>
-            <li>სხვა</li>
+            <li><Link to="/football">ფეხბურთი</Link></li>
+            <li><Link to="/basketball">კალათბურთი</Link></li>
+            <li><Link to="/tennis">ჩოგბურთი</Link></li>
+            <li><Link to="/combatsports">ორთაბრძოლები</Link></li>
+            <li><Link to="/rugby">რაგბი</Link></li>
+            <li><Link to="/other">სხვა</Link></li>
           </ul>
         </div>
       )}

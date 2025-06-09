@@ -15,6 +15,10 @@ body {
  
 }
 
+.menu li a {
+  color: white;
+}
+
 .contiaenr {
   width: 100%;
   height: fit-content;
@@ -39,14 +43,29 @@ body {
 /* Dropdown სტილი */
 /* Dropdown სტილი */
 .dropdown-menu {
-  background-color: white;
+  display: flex;
+  justify-content: start;
+  height: 60vh;
+  background-color: #18203E;
   border-top: 1px solid #ddd;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   padding: 10px 20px;
   position: relative; /* დაამატე ამისათვის */
   z-index: 999; /* დარწმუნდით, რომ მენიუ მაღლა იქნება */
 }
+.dropdown-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
 
+}
+.dropdown-menu ul li a {
+  color: white;
+  color: white;
+  font-size: 20px;
+
+}
 .hamburger-menu .bar {
   height: 4px;
   width: 100%;
@@ -114,6 +133,8 @@ body {
   overflow: hidden; /* optional */
   
 }
+
+
 
 
 /* maincontet */

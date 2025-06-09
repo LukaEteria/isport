@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import newsData from '../data/News.json';
 import './News.css';
 
-function News() {
+function News({ category }) {
   const scrollRef = useRef(null);
   const navigate = useNavigate();
 
@@ -32,10 +32,15 @@ function News() {
     navigate(`/article/${id}`);
   };
 
+  // ფილტრაცია კატეგორიის მიხედვით (თუ გადმოცემულია)
+  const filteredNews = category
+    ? newsData.filter((news) => news.category === category)
+    : newsData;
+
   return (
     <div className="news-wrapper">
       <div className="news-header">
-        <h2 className="news-title">News</h2>
+        <h2 className="news-title">სიახლეები</h2>
         <span className="news-line"></span>
       </div>
       <div
@@ -46,8 +51,8 @@ function News() {
         onMouseUp={mouseUpHandler}
         onMouseMove={mouseMoveHandler}
       >
-        {newsData.map(({ id, title, image, date }) => {
-          const formattedDate = new Date(date).toLocaleDateString("en-GB");
+        {filteredNews.map(({ id, title, image, date }) => {
+          const formattedDate = new Date(date).toLocaleDateString("ka-GE");
           return (
             <div key={id} className="news-card" onClick={() => handleClick(id)}>
               <img className="news-image" src={image} alt={title} />

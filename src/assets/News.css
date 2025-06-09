@@ -90,3 +90,11 @@
   color: #888;
   margin-bottom: 6px;
 }
+
+.div{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #121831;
+  height: 100vh;
+}

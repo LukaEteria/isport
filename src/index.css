@@ -121,9 +121,7 @@
     padding: 20px 20px; /* ზოგადი პადინგი */
   }
 
-  .header {
-    padding: 0 20px;
-  }
+ 
 }
 
 @media screen and (max-width: 800px) {
